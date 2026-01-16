@@ -1,0 +1,21 @@
+{
+  "wikidata": {
+    "endpoint": "https://query.wikidata.org/sparql",
+    "user_agent": "MQuAKE-CF-Generator/1.0",
+    "rate_limit_delay": 0.5,
+    "cache_dir": "./cache/wikidata",
+    "timeout": 30
+  },
+  "generation": {
+    "variations_per_instance": 5,
+    "max_retries": 3,
+    "min_similarity_score": 0.7,
+    "parallel_workers": 1
+  },
+  "data": {
+    "input_path": "./data/MQuAKE-CF-3k-remastered.json",
+    "output_path": "./data/MQuAKE-CF-3k-remastered-variations.json",
+    "template_dir": "./prompts/templates/",
+    "sample_limit": null
+  }
+}
